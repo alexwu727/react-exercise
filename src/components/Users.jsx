@@ -8,7 +8,7 @@ const Users = () => {
     const [lastLoadTime, setLastLoadTime] = useState(null)
     const [filter, setFilter] = useState('')
 
-    const fetchWithTimeout = async (url, options, timeout = 3500) => {
+    const fetchWithTimeout = async (url, options, timeout = 4000) => {
         return Promise.race([
             fetch(url, options),
             new Promise((_, reject) =>
